@@ -1,0 +1,73 @@
+
+    img {
+      height:250px;
+      width: 250px;
+      transition: height 1s, width 1s, box-shadow 1s;
+    }
+    img:hover{
+      height:270px;
+      width: 270px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+      
+    }
+    body {
+      background-color: rgb(255,150,120);
+    }
+    button {
+      cursor: pointer;
+      margin-right: 10px;
+    }
+    a {
+      font-size: 20px;
+      margin-right: 10px;
+    }
+    .s {
+      background-color: rgb(200,0,0);
+      color: white;
+      border: none;
+      height: 36px;
+      width: 100px;
+      border-radius: 3px;
+      margin-left: 50px;
+      transition: background-color 0.5s, color 0.5s;
+    }
+    .j {
+      color: rgb(0,20,255);
+      background-color: white;
+      height: 36px;
+      width: 60px;
+      border-radius: 3px;
+      border-color: rgb(0,100,255);
+      border-style: solid;
+      border-width: 2px;
+      transition: background-color 0.5s, color 0.5s;
+    }
+    .t {
+      background-color: rgb(0,120,255);
+      color: white;
+      border: none;
+      height: 36px;
+      width: 80px;
+      border-radius: 18px;
+      font-weight: bold;
+      font-size: 15px;
+      transition: opacity 0.15s, box-shadow 0.3s;
+    }
+    .s:hover{
+      background-color: white;
+      color: rgb(200,0,0);
+      border: 2px solid;
+      border-color: rgb(255,50,50);
+    }
+    .t:hover{
+      opacity: 0.8;
+      box-shadow: 0 3px 8px rgba(0,0,0,0.3);
+      
+    }
+    .t:active{
+      opacity: 0.5;
+    }
+    .j:hover{
+      background-color: rgb(20,100,255);
+      color: white;
+    }
