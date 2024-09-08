@@ -1,4 +1,4 @@
-<!Doctype html>
+<!DOCTYPE html>
 <html>
   <head>
     
@@ -13,7 +13,12 @@
     <button class="s">
       SUBSCRIBE        
     </button>
-    <button class="j">
+    <button class="j" 
+      onclick="
+      
+      joining(result);
+      
+      ">
       JOIN
     </button>
     <button class="t">
@@ -24,5 +29,57 @@
     </a>
     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNxSAi0hoxzaisLnB-RoX-c04QV04h_qUhuQ&amp;s" alt="Suprise!"/>
       
-  </body> 
+  </body>
+  <script>
+
+    const players = {
+
+      name1: 'hamid',
+      powerlevel1: Math.round(Math.random()*100000000),
+      name2: 'beerus',
+      powerlevel2: 84249544
+    }
+    function powercheck(input1, input2){
+
+      if (input1 >= input2 ){
+        
+        console.log(`${players.name1} you are impressive! your powerlvl is ${players.powerlevel1}`);
+        return 'strong';
+      }else{
+        
+        console.log(`${players.name1} you are a weakling your powerlvl is ${players.powerlevel1}`);
+        return 'weak';
+      }
+    }
+    function joining(result){
+      if (result == 'weak'){
+        alert('eat shit');
+
+        
+      }else if (result == 'strong'){
+        alert('you joined bitch');
+        
+      } 
+    }     
+    let result = powercheck(players.powerlevel1,players.powerlevel2);
+  </script>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
